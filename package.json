@@ -1,0 +1,29 @@
+{
+  "name": "hubspot-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Command-line tool for working with a HubSpot account. Not affiliated with HubSpot.",
+  "license": "MIT",
+  "author": "Alonso Avalo",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "hubspot-toolkit": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "@types/yargs": "^17.0.35",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.9.0",
+    "yargs": "^18.2.0"
+  }
+}

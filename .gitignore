@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+# your input files are ignored; the demo file is kept
+csv/*.csv
+!csv/dymamic_properties_test.csv
